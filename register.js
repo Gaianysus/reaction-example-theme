@@ -2,8 +2,8 @@ import { Reaction } from "/server/api";
 
 Reaction.registerPackage({
   // Name of the theme for presentation purposes
-  label: "Example Theme",
+  label: "Gaianysus Theme",
 
   // Name of your theme to uniquely identify it from other themes
-  name: "reaction-example-theme"
+  name: "reaction-gaianysus-theme"
 });

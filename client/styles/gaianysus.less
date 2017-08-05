@@ -1,0 +1,35 @@
+@gradient-end: #aaf;
+@gradient-start: #faf;
+
+html, #react-root, .rui.navbar {
+  background: @gradient-start; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, @gradient-start , @gradient-end); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @gradient-start, @gradient-end); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @gradient-start, @gradient-end); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @gradient-start , @gradient-end); /* Standard syntax */
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important;
+  background-attachment: scroll !important;
+  color: @color;
+}
+
+main, .reaction-navigation-header {
+  background: @gradient-start; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, @gradient-end , @gradient-start); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @gradient-end, @gradient-start); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @gradient-end, @gradient-start); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @gradient-end , @gradient-start); /* Standard syntax */
+  background-clip: border-box !important;
+  background-origin: padding-box !important;
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important;
+  background-attachment: scroll !important;
+}
+
+.cart, .cart-container, .cart-icon {
+  background-color: @color;
+}

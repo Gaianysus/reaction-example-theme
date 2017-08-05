@@ -1,5 +1,5 @@
-# Reaction Example Theme
-Reaction Commerce example theme plugin.
+# Reaction Gaianysus Theme
+Reaction Commerce gaianysus theme plugin.
 
 # Installation
 Install this theme in `imports/plugins/custom/` to activate it.
