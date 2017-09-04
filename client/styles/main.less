@@ -5,8 +5,8 @@
 
 // Override any variables from the default theme
 
-  @color: #3e22ff;
-  @color2: #6a00ff;
+  @color: #1e024f;
+  @color2: #2a132f;
   @color3: #0000ff;
   @color4: #de00fe;
   @color5: #111122;
@@ -14,12 +14,16 @@
   @color7: #2A9FD6;
   @color8: #222299;
   @linkcolor: #ff00ff;
-  @bgcolor: rgba(42, 2, 42, 0.9);
-  @bgcolor2: rgba(52, 2, 42, 0.7);
-  @bgcolor3: rgba(62, 2, 42, 0.7);
+  @bg1: #faf;
+  @bg2: #aaf;
+  @bgcolor: rgba(255, 170, 255, 0.9);
+  @bgcolor2: rgba(170, 170, 255, 0.9);
+  @bgcolor3: rgba(262, 2, 2, 0.7);
   @bgcolor4: rgba(0, 0, 0, 0);
   @bgcolor5: rgba(230, 4, 164, 1);
   @bgcolor6: rgba(130, 114, 255, 1);
+  @bordercolor: #303;
+  @bordercolor1: #505;
 
 // Cyborg 3.3.7
 // Variables
@@ -91,12 +95,12 @@
 @headings-font-family:    @font-family-base;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
-@headings-color:          #fff;
+@headings-color:          @color2;
 
 
 //== Iconography
 //
-//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+// Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
 @icon-font-path:          "../fonts/";
@@ -108,7 +112,7 @@
 
 //== Components
 //
-//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+// Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
 @padding-base-vertical:     8px;
 @padding-base-horizontal:   12px;
@@ -130,7 +134,7 @@
 @border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    @color2;
 //** Global background color for active items (e.g., navs or dropdowns).
 @component-active-bg:       @brand-primary;
 
@@ -142,7 +146,7 @@
 
 //== Tables
 //
-//## Customizes the `.table` component with basic values, each used across all table variations.
+// Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
 @table-cell-padding:            8px;
@@ -163,13 +167,23 @@
 
 //== Buttons
 //
-//## For each of Bootstrap's buttons, define text, background and border color.
+// For each of Bootstrap's buttons, define text, background and border color.
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #fff;
+@btn-default-color:              #color2;
 @btn-default-bg:                 lighten(@gray-dark, 10%);
 @btn-default-border:             @btn-default-bg;
+
+.rui.meta-key {
+  color: @color;
+  background-color: @bgcolor;
+}
+
+.rui.meta-value {
+  color: @color2;
+  background-color: @bgcolor2;
+}
 
 @btn-primary-color:              @btn-default-color;
 @btn-primary-bg:                 @brand-primary;
@@ -201,7 +215,7 @@
 
 //== Forms
 //
-//##
+//
 
 //** `<input>` background color
 @input-bg:                       #fff;
@@ -209,7 +223,7 @@
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    @text-color;
+@input-color:                    #000;
 //** `<input>` border color
 @input-border:                   @gray-dark;
 
@@ -264,9 +278,9 @@
 @dropdown-divider-bg:            rgba(255,255,255,0.1);
 
 //** Dropdown link text color.
-@dropdown-link-color:            #fff;
+@dropdown-link-color:            #3f3;
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      #fff;
+@dropdown-link-hover-color:      #afa;
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         @component-active-bg;
 
@@ -890,5 +904,16 @@
 @dl-horizontal-breakpoint:    @grid-float-breakpoint;
 //** Horizontal line color.
 @hr-border:                   @gray-dark;
+
+.variant-detail {
+  background-color: @bg2;
+  color: @color2;
+  border: 1px solid @bordercolor1;
+}
+
+.variant-select-option button {
+  background: @bg2 none repeat scroll 0 0;
+  border-color: @color2;
+}
 
 @import "{}/imports/plugins/custom/gaianysus-theme/client/styles/gaianysus.less";
